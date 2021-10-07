@@ -5,18 +5,18 @@ export default function SearchPerson(props) {
         <div className="container mt-3">
             <form className="search">
                 <div className="row">
-                    <div className="col-2">
+                    <div className="col-3">
                         <label className="text-center"><h3>Search:</h3></label>
                     </div>
-                    <div className="col-8">
+                    <div className="col-6">
                         <input
                         name="search"
                         onChange={props.handleInputChange}
+                        value={props.search}
                         type="text"
                         className="form-control"
                         placeholder="Search for Cast Member"
                         id="search"
-                        autoComplete="off"
                         />
                     </div>
                 </div>

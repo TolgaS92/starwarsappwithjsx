@@ -7,7 +7,7 @@ export default function Person() {
     const [movies, setMovies] = useState([])
     const { id } = useParams();
     useEffect(() => {
-        API.getStarWarsPerson(id)
+        API.getStarWarsPersonWithName(id)
         .then(personResult => {
             setPerson(personResult.data)
             setMovies(personResult.data.films)
