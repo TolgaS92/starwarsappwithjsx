@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar/Navbar";
 import People from "./components/People/People";
 import Person from "./components/Person/Person";
 import Films from "./components/Films/Films";
-/* import GetPerson from "./components/GetPerson/GetPerson"; */
 
 function App() {
   return (
