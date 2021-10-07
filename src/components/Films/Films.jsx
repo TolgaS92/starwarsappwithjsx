@@ -14,7 +14,7 @@ export default function Person() {
     }, [id])
     return (
         <div className="container">
-            <div className="row justify-content-center mt-3">
+            <div className="row justify-content-center mt-3 text-center">
             <div className="card col-6">
             <div className="card-header">
               <h3>Title: {movies.title}</h3>
@@ -26,9 +26,9 @@ export default function Person() {
             </ul>
             </div>
             </div>
-            <div className="row justify-content-center mt-5">
+            <div className="row justify-content-center mt-5 text-center">
                 <div className="col-3">
-                    <Link to="/">← Back to Cast</Link>
+                    <Link to='/starwarsappwithjsx/'>← Back to Search</Link>
                 </div>
             </div>
         </div>

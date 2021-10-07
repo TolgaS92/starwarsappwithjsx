@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function People() {
     const [onePerson, setOnePerson] = useState([])
     const [search, setSearch] = useState("")
-
+    
 
     useEffect(() => {
         function searchData(){
@@ -32,23 +32,19 @@ function People() {
     const handleInputChange = event => {
         setSearch(event.target.value.toLowerCase());
       };
-
-
-    function handleClick (event) {
-        event.preventDefault();
-    }
-
+      console.log(onePerson)
     return (
         <div className="container">
             <SearchPerson 
             handleInputChange = {handleInputChange}
             search = {search}
+            onePerson = {onePerson}
             />
                 {onePerson && onePerson.map((people, index) => 
                 people.name.toLowerCase().includes(search) ?
                 <div className="mb-5 mt-5 text-center d-flex justify-content-center" key={index}>
                     <div className="card col-4">
-                        <Link onClick={handleClick} to={"/person/" + (people.name)}>
+                        <Link to={"/person/" + (people.name)}>
                             <div className="card-header">{people.name}</div>
                         </Link>
                     </div>
@@ -57,7 +53,7 @@ function People() {
                 people.name.toLowerCase().includes(search) ?
                 <div className="mb-5 mt-5 text-center d-flex justify-content-center" key={index}>
                     <div className="card col-4">
-                        <Link onClick={handleClick} to={"/person/" + (people.name)}>
+                        <Link to={"/person/" + (people.name)}>
                             <div className="card-header">{people.name}</div>
                         </Link>
                     </div>
