@@ -18,7 +18,7 @@ export default function Person() {
     }, [id])
     return (
         <div className="container">
-            <h1 className="text-center mt-2 mb-3">Information about the Character</h1>
+            <h1 className="text-center mt-2 mb-3 text-light">Information about the Character</h1>
             <div className="row justify-content-center mt-3 text-center">
             <div className="card col-6">
             <div className="card-header">
