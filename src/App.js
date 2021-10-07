@@ -11,7 +11,7 @@ function App() {
     <Router>
         <div>
             <Navbar />
-                <Route exact path="/">
+                <Route exact path="/starwarsappwithjsx/">
                     <GetPerson />
                 </Route>
                 <Route exact path="/person/:id">
